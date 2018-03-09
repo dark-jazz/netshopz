@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <filter>
+    <filter-name>MyFilter</filter-name>
+    <filter-class>filterDemo.MyFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>MyFilter</filter-name>
+     <url-pattern>/backstage/backjsp/*</url-pattern>
+ </filter-mapping>
+ 
+ 
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_register</servlet-name>
+    <servlet-class>com.net.do_register</servlet-class>
+  </servlet>
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_login</servlet-name>
+    <servlet-class>com.net.do_login</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_quit</servlet-name>
+    <servlet-class>com.net.do_quit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_buycar</servlet-name>
+    <servlet-class>com.net.do_buycar</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BackStage</servlet-name>
+    <servlet-class>com.backstage.BackStage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_userlist</servlet-name>
+    <servlet-class>com.backstage.do_userlist</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_del</servlet-name>
+    <servlet-class>com.backstage.do_del</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_update</servlet-name>
+    <servlet-class>com.backstage.do_update</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_update2</servlet-name>
+    <servlet-class>com.backstage.do_update2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BackStageServlet</servlet-name>
+    <servlet-class>filterDemo.BackStageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_userlistByPage</servlet-name>
+    <servlet-class>com.backstage.do_userlistByPage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_good</servlet-name>
+    <servlet-class>com.goods.do_good</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BackStageToGood</servlet-name>
+    <servlet-class>filterDemo.BackStageToGood</servlet-class>
+  </servlet>
+
+
+
+ 
+  
+  <servlet-mapping>
+    <servlet-name>do_register</servlet-name>
+    <url-pattern>/do_register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_login</servlet-name>
+    <url-pattern>/do_login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_quit</servlet-name>
+    <url-pattern>/do_quit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_buycar</servlet-name>
+    <url-pattern>/do_buycar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackStage</servlet-name>
+    <url-pattern>/backstage/jsp/</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_userlist</servlet-name>
+    <url-pattern>/backstage/jsp/do_userlist</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_del</servlet-name>
+    <url-pattern>/backstage/jsp/do_del</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_update</servlet-name>
+    <url-pattern>/backstage/jsp/do_update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_update2</servlet-name>
+    <url-pattern>/backstage/jsp/do_update2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackStageServlet</servlet-name>
+    <url-pattern>/backstage/backjsp/BackStageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_userlistByPage</servlet-name>
+    <url-pattern>/backstage/jsp/do_userlistByPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_good</servlet-name>
+    <url-pattern>/do_good</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackStageToGood</servlet-name>
+    <url-pattern>/servlet/BackStageToGood</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+
+</web-app>

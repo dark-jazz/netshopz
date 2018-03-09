@@ -1,0 +1,50 @@
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #add p{
+           width: 300px;
+            height: 30px;
+            margin-top:10px;
+            text-align: center;
+        }
+
+        #add span{
+             display: inline-block;
+             width: 60px;
+             text-align: right;
+             margin-right: 20px;
+
+        }
+        #add input{
+            text-align: right;
+        }
+
+
+    </style>
+
+<form id="add">
+
+    <p>
+        <span>用户名：</span>
+        <input type="text" data-options="required:true" class="easyui-validatebox" name="username">
+    </p>
+    <p>
+        <span>出生日期：</span>
+        <input type="text" class="easyui-datebox" data-options="required:true" class="easyui-validatebox" name="birthTime">
+    </p>
+    <p>
+        <span>性别：</span>
+        <input type="radio" name="sex" value="0" name="sex">男
+        <input type="radio" name="sex" value="1" name="sex">女
+    </p>
+    <p>
+        <span>地址：</span>
+        <input type="text" data-options="required:true" class="easyui-validatebox" name="address">
+    </p>
+
+
+</form>
+
